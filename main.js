@@ -85,13 +85,13 @@ productList.push({
 productList.push({
     name: 'Pantalla',
     price: 220,
-    image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    image: 'https://i.linio.com/p/2faf87ad4306c8207692b5da824edcee-product.jpg',
 })
 
 productList.push({
     name: 'Computadora',
     price: 620,
-    image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    image: 'https://www.sincable.mx/wp-content/uploads/2020/01/patrick-ward-z_dLXnQg0JY-unsplash-scaled.jpg',
 })
 
 //Función que nos permite leer un array y mostrar los elementos en un HTML

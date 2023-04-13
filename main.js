@@ -8,7 +8,7 @@ const mobileMenu = document.querySelector('.mobile-menu');
 
 //Para el menu carrito
 const menuCarritoIcon = document.querySelector('.navbar-shopping-cart');
-const aside = document.querySelector('.product-detail');
+const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
 
 //Para agregar todo el HTML a javaScript.
 const cardsContainer = document.querySelector('.cards-container');
@@ -20,20 +20,20 @@ menuCarritoIcon.addEventListener('click', toggleCarrito);
 
 //Funcion que nos ayuda a mostrar o quitar el menu chiquito 
 function toggleDesktopMenu(){
-    const isAsideClosed = aside.classList.contains('inactive');
+    const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
 
     if (!isAsideClosed){
-        aside.classList.add('inactive');
+        shoppingCartContainer.classList.add('inactive');
     }
     desktopMenu.classList.toggle('inactive');
 }
 
 //Funcion que nos ayuda a mostrar o quitar el menu en mobile 
 function toggleMobileMenu(){
-    const isAsideClosed = aside.classList.contains('inactive');
+    const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
 
     if (!isAsideClosed){
-        aside.classList.add('inactive');
+        shoppingCartContainer.classList.add('inactive');
     }
     mobileMenu.classList.toggle('inactive');
 }
@@ -45,7 +45,7 @@ function toggleCarrito(){
     if (!isMobileMenuClosed){
         mobileMenu.classList.add('inactive');
     }
-    aside.classList.toggle('inactive');
+    shoppingCartContainer.classList.toggle('inactive');
 }
 
 //Creamos una lista de productos, donde se almacenaran los distintos productos que mostrara la página.
